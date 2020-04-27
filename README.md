@@ -91,11 +91,11 @@ This action returns the player's complete list of fishes ever caught since start
 ```
 John's Fishing Record!
 					
-	Guppy : 0
-	Saba Fish : 1
-	King Salmon : 0
-	Giant Magikarp?? : 0
-	Largest Fish You Ever Caught : 27 cm
+Guppy : 0
+Saba Fish : 1
+King Salmon : 0
+Giant Magikarp?? : 0
+Largest Fish You Ever Caught : 27 cm
 
 What would you like to do next? Enter 'help' if you need the commands again!
 ```
@@ -122,23 +122,23 @@ the cost of upgrading. The game then waits for their response on whether they wo
 ```
 Yay! Time to upgrade your rod!
 
-	Your next available rod is: Newer Rod!
+Your next available rod is: Newer Rod!
 
-	probability of getting Guppy: 20%, 
-	probability of getting Saba Fish: 40%, 
-	probability of getting Norweigian Salmon: 30%, 
-	probability of getting Giant Magikarp??: 10%
+probability of getting Guppy: 20%, 
+probability of getting Saba Fish: 40%, 
+probability of getting Norweigian Salmon: 30%, 
+probability of getting Giant Magikarp??: 10%
 
-	COST: $100
+COST: $100
 
-	Your previous rod (Old Rod)'s specifications:
+Your previous rod (Old Rod)'s specifications:
 
-	probability of getting Guppy: 50%, 
-	probability of getting Saba Fish: 30%, 
-	probability of getting Norweigian Salmon: 15%, 
-	probability of getting Giant Magikarp??: 5%
+probability of getting Guppy: 50%, 
+probability of getting Saba Fish: 30%, 
+probability of getting Norweigian Salmon: 15%, 
+probability of getting Giant Magikarp??: 5%
 
-	Would you like to upgrade? Y/N
+Would you like to upgrade? Y/N
 
 ```
 #### 'buy'
@@ -146,62 +146,62 @@ This action allows the player to purchase single-use fishing nets to use within 
 The player would receive the following prompt on whether he would like to continue with his purchase of fishing nets, answering with the quantity of nets to be purchased.
 ```
 So you want to buy some fishing nets? Sure!
-	Let me explain how to use them again:
+Let me explain how to use them again:
 
-	Each fishing net catches you five fishes at one time, and can only be used once, with:
-	probability of getting Guppy: 20%, 
-	probability of getting Saba Fish: 20%, 
-	probability of getting Norweigian Salmon: 30%, 
-	probability of getting Giant Magikarp??: 30%
+Each fishing net catches you five fishes at one time, and can only be used once, with:
+probability of getting Guppy: 20%, 
+probability of getting Saba Fish: 20%, 
+probability of getting Norweigian Salmon: 30%, 
+probability of getting Giant Magikarp??: 30%
 
-	After purchasing fishing nets, the option to enter 'N' will appear when you are FISHING.
-	Enter 'N' each time to use the fishing net(s) you have purchased.
-	Once all fishing nets purchased have been used up, you will no longer be given the option 'N'.
+After purchasing fishing nets, the option to enter 'N' will appear when you are FISHING.
+Enter 'N' each time to use the fishing net(s) you have purchased.
+Once all fishing nets purchased have been used up, you will no longer be given the option 'N'.
 
-	Price of 1 fishing net: $20
+Price of 1 fishing net: $20
 
-	How many would you like to buy? 
-	Enter "None" if you'd like to cancel your purchase.
+How many would you like to buy? 
+Enter "None" if you'd like to cancel your purchase.
 ```
 #### 'fish'
 This action brings the player from the INVENTORY mode to the FISHING mode.
 The player would receive a similar message to this:
 ```
 It's fishing time!
-	...
-	You're now FISHING. Enter 'F' to cast your rod!
+...
+You're now FISHING. Enter 'F' to cast your rod!
 ```
 ## How to Complete the Game
 ---
 Upon the having $10,000 in their wallet, the player completes the game and receives the following message, terminating the game on his behalf:
 ```
-	******** WAIT A MINUTE ********
+******** WAIT A MINUTE ********
 
-	Oh my goodness! You've already earned $10,000! That's enough (in an ideal world) for John to move out from his 
-	old shack into a proper home! With the excess money, and his newly acquired knowledge on fishing,
-	John can now run his very own business as a fishing tycoon!
+Oh my goodness! You've already earned $10,000! That's enough (in an ideal world) for John to move out from his 
+old shack into a proper home! With the excess money, and his newly acquired knowledge on fishing,
+John can now run his very own business as a fishing tycoon!
 
-	"Give a man a fish, and you feed him for a day. 
-	Teach a man to fish, and you feed him for a lifetime."
+"Give a man a fish, and you feed him for a day. 
+Teach a man to fish, and you feed him for a lifetime."
 
-	Thank you for helping John in his story of self-growth and perseverance :)
+Thank you for helping John in his story of self-growth and perseverance :)
 
-	******** CONGRATULATIONS ********
+******** CONGRATULATIONS ********
 
-	You have completed the game. Kudos to you! 
+You have completed the game. Kudos to you! 
   
-  	Your Statistics!
+Your Statistics!
 					
-	Guppy : 39
-	Saba Fish : 32
-	King Salmon : 41
-	Giant Magikarp?? : 53
-	Largest Fish You Ever Caught : 446 cm
+Guppy : 39
+Saba Fish : 32
+King Salmon : 41
+Giant Magikarp?? : 53
+Largest Fish You Ever Caught : 446 cm
 
-	------------ GAME TERMINATED ------------
+------------ GAME TERMINATED ------------
 
-	Fishing for Fortune
-	Copyright 2020 Seah Qi Yan
+Fishing for Fortune
+Copyright 2020 Seah Qi Yan
 
 ```
    
@@ -220,7 +220,7 @@ Examples of some important ones are:
 #### sell_fishes(self)
 This function utilises functions from the Rod object class.
 ```
-#Function called when user wants to sell the fishes he has on him currently
+	#Function called when user wants to sell the fishes he has on him currently
 	def sell_fishes(self):
 
 		#catches the scenario where the user has no fish to sell, returns him back to previous action
@@ -244,7 +244,7 @@ This function utilises functions from the Rod object class.
 ```
 #### upgrade_rod(self)
 ```
-#Function called when player would like to upgrade his current fishing rod
+	#Function called when player would like to upgrade his current fishing rod
 	def upgrade_rod(self):
 		"""
 		PRICELIST:
@@ -336,7 +336,7 @@ More description on code design can be found in comments of `.py` file.
 An important aspect of the State Machine which detects completion of the game is the `done(self,state)` function. This functions checks the amount of money the player has accumulated at every `step` performed by the state machine. Should the amount of money exceed or be equal to 10,000, the state machine stops running and the game is terminated to end the game appropriately. 
 
 ```
-#checks if the user has completed the game --> reached the end goal of $10,000
+	#checks if the user has completed the game --> reached the end goal of $10,000
 	def done(self,state):
 		if state != "INIT":
 			money = user.coins

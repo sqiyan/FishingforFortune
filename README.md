@@ -175,7 +175,7 @@ It's fishing time!
 ---
 Upon the having $10,000 in their wallet, the player completes the game and receives the following message, terminating the game on his behalf:
 ```
-******** WAIT A MINUTE ********
+	******** WAIT A MINUTE ********
 
 	Oh my goodness! You've already earned $10,000! That's enough (in an ideal world) for John to move out from his 
 	old shack into a proper home! With the excess money, and his newly acquired knowledge on fishing,
@@ -190,7 +190,7 @@ Upon the having $10,000 in their wallet, the player completes the game and recei
 
 	You have completed the game. Kudos to you! 
   
-  Your Statistics!
+  	Your Statistics!
 					
 	Guppy : 39
 	Saba Fish : 32
